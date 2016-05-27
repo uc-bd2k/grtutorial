@@ -1,0 +1,27 @@
+{"datafile":["www/Heiser2012_GR_metrics_2015-12-11.tsv"],
+    "description": ["<p>This is Heiser et. al. PNAS 2012 dataset</p>"],
+    "filterColumns":{},
+    "renameColumns":{},
+    "groupableColumns":["Small Molecule","Cell line"],
+    "doseresponse":{
+       "xmin":["0"],"xmax":["0"],
+       "defaultChoicevar":["Cell line"],
+       "defaultGroupingVars":["Small Molecule"],
+       "EC50":["EC50 for GR curve"],
+       "Einf":["Einf for GR curve"],
+       "HillSlope":["Hill coeff. for GR curve"],
+       "EC50_IC":["EC50 for IC curve"],
+       "Einf_IC":["Einf for IC curve"],
+       "HillSlope_IC":["Hill coeff. for IC curve"],
+       "toggle":["1"],
+       "hideselector":["0"]
+    },
+     "scatterplot":{
+       "defaultChoicevar":["Cell line"],
+       "defaultGroupingVars":["Small Molecule"],
+       "GR50":["GR50"],
+       "GRmax":["GRmax"],
+       "GRinf":["Einf for GR curve"],
+       "HillSlope":["Hill coeff. for GR curve"],
+       "hideselector":["0"]
+     }}

@@ -1,0 +1,27 @@
+{"datafile":["www/test.tsv"],
+    "description": ["<p>This is a test dataset</p>"],
+    "filterColumns":{},
+    "renameColumns":{},
+    "groupableColumns":["Cell","Drug","Density"],
+    "doseresponse":{
+       "xmin":["0"],"xmax":["0"],
+       "defaultChoicevar":["Cell"],
+       "defaultGroupingVars":["Drug"],
+       "EC50":["Value"],
+       "Einf":["Value"],
+       "HillSlope":["Value"],
+       "EC50_IC":["Value"],
+       "Einf_IC":["Value"],
+       "HillSlope_IC":["Value"],
+       "toggle":["1"],
+       "hideselector":["0"]
+    },
+     "scatterplot":{
+       "defaultChoicevar":["Cell"],
+       "defaultGroupingVars":["Drug"],
+       "GR50":["Value"],
+       "GRmax":["Value"],
+       "GRinf":["Value"],
+       "HillSlope":["Value"],
+       "hideselector":["0"]
+     }}
