@@ -5,6 +5,7 @@ library(shiny)
 #library(ggplot2)
 library(shinyLi)
 #library(jsonlite)
+library(markdown)
 
 
 shinyUI(
