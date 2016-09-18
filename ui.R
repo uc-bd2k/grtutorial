@@ -10,7 +10,7 @@ library(shinyLi)
 shinyUI(
   fluidPage(
     #adding head section to html with links to CSS files
-     tags$head(tags$link(href="css/ilincs.css",rel="stylesheet"))
+    tags$head(tags$link(href="css/ilincs.css",rel="stylesheet"))
     #displaying header
     ,includeHTML("www/html/nav.html")
     ,titlePanel("General Information")
@@ -48,8 +48,10 @@ shinyUI(
                   , width=8
                 )
                 ,tags$style("#dose-response-curves-main {align:left}")
-     			,tags$div(tags$head(tags$link(href="css/AboutGRMetrics.css",rel="stylesheet"))
-					    		,includeHTML("www/Exploration-bottom.html"))
+     			,#tags$div(#tags$head(tags$link(href="css/AboutGRMetrics.css",rel="stylesheet"))
+					    		#,includeHTML("www/Exploration-bottom.html"
+     			  includeMarkdown("www/Exploration-bottomMD.Md")
+     			#)
 				,tags$script(src = 'd3.min.js')
 				,tags$script(src = 'd3-legend.min.js')
             )
