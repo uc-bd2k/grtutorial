@@ -37,8 +37,9 @@ shinyUI(
 			 )
              ,tabPanel(value="AboutGR",
                        "About GR metrics",
-     					tags$div(tags$head(tags$link(href="css/AboutGRMetrics.css",rel="stylesheet"))
-					    ,includeHTML("www/AboutGR.html"))
+     					#tags$div(tags$head(tags$link(href="css/AboutGRMetrics.css",rel="stylesheet"))
+					    #,includeHTML("www/AboutGR.html"))
+					    includeMarkdown("www/AboutGR_md.md")
              )
            ,tabPanel(value="Exploration",
                "Exploration tool"
