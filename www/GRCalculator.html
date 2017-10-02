@@ -9,7 +9,7 @@
   metrics, and compare their results across the variables in the assay, such as
   cell line, agent (drug), time and replicate. Python, R and MATLAB code for
   calculating GR value and GR metrics is also available in the
-  <a href="https://github.com/sorgerlab/gr50_tools">gr50_tools repository on GitHub</a>.
+  <a href="https://github.com/datarail/gr_metrics">gr_metrics repository on GitHub</a>.
   Our R code is also available in the Bioconductor package
   <a href="http://www.bioconductor.org/packages/GRmetrics">GRmetrics</a>.
 </p>
@@ -17,33 +17,8 @@
 <h2>Input data</h2>
 
 <p>
-  The input .tsv file(s) must have the following column headers (first row of
-  the file):
-</p>
-
-<ul>
-  <li>
-    <strong>concentration</strong>: The concentration of the perturbagen on
-    which dose-response curves will be evaluated.
-  </li>
-  <li>
-    <strong>cell_count</strong>: The number of cells (or a surrogate of cell
-    number such as CellTiter-Glo® staining) after treatment.
-  </li>
-  <li>
-    <strong>cell_count__ctrl</strong>: The cell_count measurement in control
-    wells (e.g. DMSO-treated) from the same plate (control cell count).
-  </li>
-  <li>
-    <strong>cell_count__time0</strong>: The cell_count measurement in untreated
-    wells grown in parallel until the time of treatment (time<sub>0</sub> cell
-    count).
-  </li>
-</ul>
-
-<p>
-  All other columns will be treated as additional key variables (e.g.
-  cell_line, drug, time, replicate).
+  The GRcalculator takes in either comma-separated (.csv) or tab-separated (.tsv) files with specified column names. See the <a href="http://www.grcalculator.org/grcalculator/example.html">step-by-step example</a>. For more explicit instructions, go to the
+  <a href="http://www.grcalculator.org/grcalculator/">GRcalculator</a> and click "Import Data File" and select a "GR Calculation Method" and "Input File Format" to see the exact columns needed for a particular input style.
 </p>
 
 <h2>Calculated metrics</h2>
@@ -84,7 +59,9 @@
 <p>
   In addition, the online calculator reports the r-squared of the fit and
   evaluates the significance of the sigmoidal fit based on an F-test. Further
-  information about these calculations is available through our GR tutorial.
+  information about these calculations is available through our GR tutorial. 
+  Traditional metrics based on relative cell count (e.g. IC<sub>50</sub>, 
+  E<sub>max</sub>, etc.) are computed as well for comparison.
 </p>
 
 <p>
