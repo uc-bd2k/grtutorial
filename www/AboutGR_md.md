@@ -29,7 +29,7 @@ cell count at different time points, time-dependent GR values are defined as:
         (<span class="math">xctrl</span> and <span
         class="math">x&#40;c)</span>); and (right) time-dependent approach
         based on cell count before and after a time interval
-        <span class="math">2 × 𝚫t (x(c, t ± 𝚫t))</span>.
+        <span class="math">2 × &#916t (x(c, t 	&#177 &#916t))</span>.
 
     </figcaption>
 </figure>
@@ -42,7 +42,7 @@ across a range of concentrations are fitted to a sigmoidal curve:
 where the fitted parameters are:
 
 - **GR<sub>inf</sub>**: the effect of the drug at infinite concentration
-  (*GR<sub>inf</sub>* = *GR(c→∞)*). *GR<sub>inf</sub>* lies between –1 and 1.
+  (*GR<sub>inf</sub>* = *GR*(c&#8594;<span class="math">&#8734;</span>)). *GR<sub>inf</sub>* lies between -1 and 1.
   Negative values correspond to cytotoxic responses (i.e., induction of cell
   death), and a value of 0 corresponds to a fully cytostatic response.
 - **h<sub>GR</sub>**: the Hill coefficient of the fitted curve, which reflects
@@ -52,8 +52,8 @@ where the fitted parameters are:
   artefacts in curve fitting we constrain *GEC<sub>50</sub>* to be within two
   orders of magnitude higher and lower than the experimentally tested
   concentration range. (In practice, this is usually about 10<sup>-7</sup> to
-  10<sup>3</sup> μM.)If the fit of the curve is not significantly better than
-  that of a flat curve (i.e., *GR&#40;c)* ≡ *GR<sub>inf</sub>*) based on an
+  10<sup>3</sup> μM.) If the fit of the curve is not significantly better than
+  that of a flat curve (i.e., *GR&#40;c)* &#8801; *GR<sub>inf</sub>*) based on an
   F-test with cutoff of p = 0.05, the response is considered flat, and the
   parameter *GEC<sub>50</sub>* is set to 0.
 
@@ -65,13 +65,13 @@ over time.
 
 The *GR<sub>50</sub>* value is the concentration of drug at which *GR(c =
 GR<sub>50</sub>) = 0.5*. If the value for *GR<sub>inf</sub>* is above 0.5, the
-*GR<sub>50</sub>* value is not defined and is therefore set to +∞. By extension,
+*GR<sub>50</sub>* value is not defined and is therefore set to +<span class="math">&#8734;</span>. By extension,
 other thresholds can be defined in a similar manner. For example,
 *GR<sub>100</sub>* corresponds to the concentration at which a drug is fully
 cytostatic: *GR(c = GR<sub>100</sub>) = 0*.
 
 *GR<sub>max</sub>* is the maximum effect of the drug at the highest tested
-concentration. It lies between –1 and 1. A value of 0 corresponds to a fully
+concentration. It lies between -1 and 1. A value of 0 corresponds to a fully
 cytostatic response, and negative values correspond to a cytotoxic response.
 *GR<sub>max</sub>* can be estimated from the fitted curve or obtained directly
 from experimental data. (We often do the later.)
@@ -111,7 +111,7 @@ particularly sensitive to outlier values when directly obtained from data.
         sensitivity parameters can be defined. In contrast, in the case shown in
         the lower left panel, <span class="math">GR<sub>inf</sub></span> is
         above 0.5, so <span class="math">GR<sub>50</sub></span> cannot be
-        defined (and thus is set to <span class="math">∞</span>). In the case
+        defined (and thus is set to <span class="math">&#8734;</span>). In the case
         shown in the lower right panel, the response is weak and noisy, so the
         sigmoidal fit is not significant, and a straight flat line is fitted.
         Nevertheless, only <span class="math">GR<sub>AOC</sub></span> and <span

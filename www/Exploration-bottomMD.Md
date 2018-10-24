@@ -9,8 +9,8 @@
         buttons to display the output of the model for a defined drug response
         profile (cytostatic, partial cytostatic, or cytotoxic). (left)
         Normalized cell count over time at different concentrations of drug;
-        (middle) the resulting IC curve and IC metrics; (right) the resulting GR
-        curve and GR metrics.
+        (middle) the resulting (traditional) dose-response curve and associated metrics;
+        (right) the resulting growth-rate inhibition (GR) dose-response curve and associated GR metrics.
 
     </figcaption>
 </figure>
@@ -29,7 +29,7 @@ where *x* is the cell count, *k* is the untreated growth rate (per day), *c* is
 the drug concentration, *S<sub>M</sub>* is the maximal inhibitory effect,
 *SC<sub>50</sub>* is the concentration at half-maximal effect of drug, and *h*
 is the Hill coefficient. The growth rate *k* corresponds to the division rate
-*k<sub>0</sub>* as *k = ln(2)⋅k<sub>0</sub> = ln(2)/T<sub>d</sub>*, where
+*k<sub>0</sub>* as *k = ln(2)&#8901;k<sub>0</sub> = ln(2)/T<sub>d</sub>*, where
 *T<sub>d</sub>* is the division time. *S<sub>M</sub>* can be larger than 1 to
 account for drugs inducing cell death at a specific phase of the cell cycle.
 
@@ -43,7 +43,7 @@ Thus, the relative cell count is:
 
 <img src="images/image00.png" style="height: 60px; display: block; margin: auto; margin-bottom: 20px; margin-top: 20px;"/>
 
-where *x<sub>ctrl</sub> ≡ x(0)*, and the normalized growth rate inhibition (*GR
+where *x<sub>ctrl</sub> &#8801; x(0)*, and the normalized growth rate inhibition (*GR
 value*) is:
 
 <img src="images/image09.png" style="height: 60px; display: block; margin: auto; margin-bottom: 20px; margin-top: 20px;"/>
