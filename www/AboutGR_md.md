@@ -29,7 +29,7 @@ cell count at different time points, time-dependent GR values are defined as:
         (<span class="math">xctrl</span> and <span
         class="math">x&#40;c)</span>); and (right) time-dependent approach
         based on cell count before and after a time interval
-        <span class="math">2 × &#916t (x(c, t 	&#177 &#916t))</span>.
+        <span class="math">2 &#10799 &#916t (x(c, t 	&#177 &#916t))</span>.
 
     </figcaption>
 </figure>
