@@ -2,11 +2,12 @@ library(shiny)
 library(shinyLi)
 library(markdown)
 library(shiny.semantic)
+library(shinyjs)
 
 shinyUI(
     #fluidPage(
     semanticPage(
-        title = "GR tutorial",
+        title = "About GR Metrics",
         # adding head section to html with links to CSS files
         tags$head(tags$link(href="css/ilincs.css", rel="stylesheet"),
                   tags$link(href="css/AboutGRMetrics.css", rel="stylesheet")),
@@ -55,7 +56,7 @@ shinyUI(
         ######## contact modal end #########
         div(class = "ui container", style = "width: inherit!important; display: flex; min-height: 100vh; flex-direction: column;",
             ######### top menu start ########
-            div(class = "ui top attached inverted seven item stackable menu",  style = "flex: 0.1;",
+            div(class = "ui top attached inverted six item stackable menu",  style = "flex: 0.1;",
                 div(class = "ui center aligned container",
                     a(class = "item", img(class = "logo", src = "dcic.png"),
                     href = "http://lincs-dcic.org/"),
@@ -70,7 +71,7 @@ shinyUI(
             ),
             ######### top menu end ########
             ######### tab menu ##########
-            div(class="ui top basic secondary pointing menu", id = "tabs",
+            div(class="ui top basic secondary pointing menu", id = "tabs", style = "align-self: center;",
                                 a(class="active item", `data-tab`="first", "Introduction", id = "intro_tab"),
                                 a(class="item", `data-tab`="second", "About traditional metrics", id = "about_trad_tab"),
                                 a(class="item", `data-tab`="third", "About GR metrics", id = "about_gr_tab"),
@@ -125,8 +126,8 @@ shinyUI(
             
 
             ###### footer #######
-            div(class = "ui bottom attached inverted footer segment", style = "margin: 0px; flex: 1; max-height:50px; position:sticky;",
-                div(class = "ui center aligned container",
+            div(class = "ui bottom attached inverted footer segment", style = "margin: 0px; flex: 1; position:sticky;",
+                div(class = "ui center aligned container", style = "height: 50px",
                     div(class = "ui horizontal inverted large divided link list",
                         a(class = "item", div(class = "action-button", "About", id = "about") ),
                         a(class = "item", div(class = "action-button", "Contact Us", id = "contact")),
