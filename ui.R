@@ -30,6 +30,19 @@ shinyUI(
                 margin-bottom: 0px;
                 }"
         ),
+        #### support modal start #########
+        div(class = "ui large modal", id = "support_modal",
+            div(class = "header", "Support",
+                div(class = "actions", style = "float: right; display: inline-block; vertical-align: top;",
+                    div(class = "ui red basic circular cancel icon button", uiicon(type = "window close"))
+                )
+            ),
+            div(class = "ui center aligned basic segment", style = "padding-top:0px;",
+                includeHTML("www/support.html")
+            )
+        ),
+        ######## support modal end #########
+
         #### about modal start #########
         div(class = "ui small modal", id = "about_modal",
             div(class = "header", "About",
@@ -64,7 +77,7 @@ shinyUI(
                     a(class = "item", "About GR Metrics", href = "/grtutorial/", style = "font-size: 16px; padding: 5px; margin: 0px;"),
                     a(class = "item", "Online GR Calculator", href = "/grcalculator/", style = "font-size: 16px; padding: 5px; margin: 0px;"),
                     a(class = "item", "LINCS Dose-Response Datasets", href = "/grbrowser/", style = "font-size: 16px; padding: 5px; margin: 0px;"),
-                    a(class = "item", "Support", href = "/grtutorial/support.html", style = "font-size: 16px; padding: 5px; margin: 0px;"),
+                    a(class = "item action-button", "Support", id="support", style = "font-size: 16px; padding: 5px; margin: 0px;"),
                     a(class = "item", img(class = "logo", src = "logo_harvard_150.png"),
                     href = "http://sorger.med.harvard.edu" )
                 )
@@ -136,50 +149,5 @@ shinyUI(
                 )
             )
         )
-        # titlePanel("General Information"),
-        # hr(),
-        # column(
-        #     12,
-        #     tabsetPanel(
-        #         id="tabs",
-        #         tabPanel(
-        #             value="Introduction",
-        #             "Introduction",
-        #             includeHTML("www/AboutGRMetrics-Introduction.html")
-        #         ),
-        #         tabPanel(
-        #             value="AboutTraditional",
-        #             "About traditional metrics",
-        #             includeHTML("www/AboutTraditional.html")
-        #         ),
-        #         tabPanel(
-        #             value="AboutGR",
-        #             "About GR metrics",
-        #             includeMarkdown("www/AboutGR_md.md")
-        #         ),
-        #         tabPanel(
-        #             value="Exploration",
-        #             "Exploration tool",
-        #             includeHTML("www/Exploration-top.html"),
-        #             fluidRow(
-        #                 liDoseResponseCurves(anchorId="dose-response-curves-main"),
-        #                 width=8
-        #             ),
-        #             includeMarkdown("www/Exploration-bottomMD.Md"),
-        #             tags$script(src='d3.min.js'),
-        #             tags$script(src='d3-legend.min.js')
-        #         ),
-        #         tabPanel(
-        #             value="GRCalculator",
-        #             "Online GR calculator",
-        #             includeHTML("www/GRCalculator.html")
-        #         ),
-        #         tabPanel(
-        #             value="Authors",
-        #             "Authors",
-        #             includeHTML("www/Authors.html")
-        #         )
-        #     )
-        # )
     )
 )

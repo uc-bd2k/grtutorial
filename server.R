@@ -13,6 +13,12 @@ contact.modal.js = "$('.ui.mini.modal')
 })
 $('#contact_modal').modal('show')
 ;"
+support.modal.js = "$('.ui.large.modal')
+.modal({
+    blurring: false
+})
+$('#support_modal').modal('show')
+;"
 tab.js = "$('.menu .item')
   .tab()
 ;"
@@ -25,6 +31,12 @@ shinyServer(function(input,output,session) {
     })
     observeEvent(input$contact, {
       runjs(contact.modal.js)
+    })
+    observeEvent(input$support, {
+      runjs(support.modal.js)
+    })
+    observeEvent(input$support2, {
+      runjs(support.modal.js)
     })
 
     ##### code for showing/hiding tabs #####
